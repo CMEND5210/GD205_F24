@@ -6,6 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     public Transform death;
     Vector3 beginAnew;
+    public Camera cam;
+    public GameObject step;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,15 +35,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown("e"))
         {
-            transform.position += new Vector3(0f, 1f, 0f);
+            transform.position += new Vector3(0f, 9f, 0f);
             Debug.Log("Congrats! You pressed E!");
+            cam.transform.position += new Vector3(0f, 9f, 0f);
         }
     //Moves the GameObject 1 unit positive along the Y-axis when the "e" key is pressed.
 
         if (Input.GetKeyDown("q"))
         {
-            transform.position -= new Vector3(0f, 1f, 0f);
+            transform.position -= new Vector3(0f, 9f, 0f);
             Debug.Log("Congrats! You pressed Q!");
+            cam.transform.position -= new Vector3(0f, 9f, 0f);
         }
     //Moves the GameObject 1 unit negative along the Y-axis when the "q" key is pressed.
 
@@ -61,5 +66,12 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = beginAnew;
         }
+    //Places the player back to their starting position if they run into an enemy;
+
+        if (transform.position.x == step.transform.position.x && transform.position.z == step.transform.position.z)
+        {
+            Destroy(step);
+        }
+    //Destroys the GameObject referenced if the Player's X & Z positions are equal.
     }
 }

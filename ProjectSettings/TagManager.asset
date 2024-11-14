@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Board
+  - Spin
+  - Terrain
+  - Boost
+  - Mother
+  - Potato
+  - BookShelf1
+  - BookShelf2
+  - BookShelf3
+  - BookShelf4
   layers:
   - Default
   - TransparentFX
