@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//We call all the libraries we are using here.
+//We are just using the default Unity libraries.
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,12 +10,18 @@ public class PlayerMovement : MonoBehaviour
     Vector3 beginAnew;
     public Camera cam;
     public GameObject step;
+    //We call all the public and private variable that we will use.
+    //We create a public Transform variable named death.
+    //We create a Vector3 variable named beginAnew.
+    //We create a public Camera variable named cam.
+    //And a public GameObject variable named step.
 
 
     // Start is called before the first frame update
     void Start()
     {
         beginAnew = transform.position;
+        //At the start of the game, we set the Vector3 variable equal to the gameObject's current transform.position.
     }
 
     // Update is called once per frame
