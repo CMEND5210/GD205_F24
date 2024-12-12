@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StarchSanctum/StarchSanctumTitle.unity
+    guid: a6c97a9b616f8b848afe542de5f786b5
+  - enabled: 1
+    path: Assets/Scenes/StarchSanctum/StarchSanctumLevelSelect.unity
+    guid: f444c349cd05bea498706ee6ecd3c82e
+  - enabled: 1
+    path: Assets/Scenes/StarchSanctum/StarchSanctumCutscene.unity
+    guid: 42c35f2171437d44fa62d838eda2955b
+  - enabled: 1
+    path: Assets/Scenes/StarchSanctum/StarchSanctumCutsceneHard.unity
+    guid: 2139198a185cff7448a7f6d0de4613a8
+  - enabled: 1
+    path: Assets/Scenes/StarchSanctum/StarchSanctum.unity
+    guid: 6f358f262333b7f4c8444ecfaa65a6b1
+  - enabled: 1
+    path: Assets/Scenes/StarchSanctum/StarchSanctumHard.unity
+    guid: 9ff4532cb97dfb64b8daf77a187771f2
   m_configObjects: {}

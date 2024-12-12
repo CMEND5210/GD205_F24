@@ -10,10 +10,16 @@ TagManager:
   - Boost
   - Mother
   - Potato
-  - BookShelf1
-  - BookShelf2
-  - BookShelf3
-  - BookShelf4
+  - Bookshelves
+  - WaitPlace
+  - CheckPlace
+  - BookshelvesMarkers
+  - ExitPlace
+  - InteractionArea
+  - Potion
+  - Spawner
+  - LeftWarp
+  - RightWarp
   layers:
   - Default
   - TransparentFX
